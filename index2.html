@@ -9,7 +9,7 @@
     <style>
         .black-basketball-short {
   position: absolute;
-  font: bold;
+  font-style: normal;
   margin-right: 450px;
   margin-top: 40px;
   font-size: 50px;
@@ -56,8 +56,8 @@ right: 0;
   overflow: hidden;
   outline: 2px solid #090909;
   position: absolute;
-  top: 70%;
-  left:47.5%;
+  top: 56.5%;
+  left:47%;
 }
 
 button:hover {
@@ -103,22 +103,22 @@ legend.hide {
   font-weight: bold;
 }
 .fix{
-  width: 8%;
+  width: 5%;
   padding: 1em 2em;
   border: none;
-  border-radius: 5px;
+  
   font-weight: bold;
   letter-spacing: 5px;
   text-transform: uppercase;
   color: #020202;
   transition: all 1000ms;
-  font-size: 15px;
+  font-size: 11px;
   position: relative;
   overflow: hidden;
   outline: 2px solid #090909;
   position: absolute;
-  top: 63%;
-  left:48%;
+  top: 42%;
+  left:47%;
 }
 .fix:hover {
   color: #ffffff;
@@ -144,22 +144,22 @@ legend.hide {
   width: 250%;
 }
 .fixx{
-  width: 8%;
+  width: 5%;
   padding: 1em 2em;
   border: none;
-  border-radius: 5px;
+  
   font-weight: bold;
   letter-spacing: 5px;
   text-transform: uppercase;
   color: #020202;
   transition: all 1000ms;
-  font-size: 15px;
+  font-size: 11px;
   position: relative;
   overflow: hidden;
   outline: 2px solid #090909;
   position: absolute;
-  top: 63%;
-  left:60%;
+  top: 42%;
+  left:56%;
 }
 .fixx:hover {
   color: #ffffff;
@@ -185,22 +185,22 @@ legend.hide {
   width: 250%;
 }
 .fixxx{
-  width: 10%;
+  width: 5%;
   padding: 1em 2em;
   border: none;
-  border-radius: 5px;
+ 
   font-weight: bold;
   letter-spacing: 5px;
   text-transform: uppercase;
   color: #020202;
   transition: all 1000ms;
-  font-size: 15px;
+  font-size: 11px;
   position: relative;
   overflow: hidden;
   outline: 2px solid #090909;
   position: absolute;
-  top: 63%;
-  left:72%;
+  top: 42%;
+  left:65%;
 }
 .fixxx:hover {
   color: #ffffff;
@@ -226,22 +226,23 @@ legend.hide {
   width: 250%;
 }
 .fixxxx{
-  width: 8%;
+  width: 5%;
+  height: 2%;
   padding: 1em 2em;
   border: none;
-  border-radius: 5px;
+ 
   font-weight: bold;
   letter-spacing: 5px;
   text-transform: uppercase;
   color: #020202;
   transition: all 1000ms;
-  font-size: 15px;
+  font-size: 10px;
   position: relative;
   overflow: hidden;
   outline: 2px solid #090909;
   position: absolute;
-  top: 63%;
-  left:86%;
+  top: 42%;
+  left:74%;
 }
 .fixxxx:hover {
   color: #ffffff;
@@ -266,6 +267,47 @@ legend.hide {
 .fixxxx:hover::before {
   width: 250%;
 }
+.fixxxxx{
+  width: 5%;
+  padding: 1em 2em;
+  border: none;
+ 
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #020202;
+  transition: all 1000ms;
+  font-size: 9px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #090909;
+  position: absolute;
+  top: 42%;
+  left:83%;
+}
+.fixxxxx:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #020202;
+  box-shadow: 4px 5px 17px -4px #010101;
+}
+
+.fixxxxx::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #010101;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+.fixxxxx:hover::before {
+  width: 250%;
+}
+
 .f-img-loaded{
   position: absolute;
   margin-left: 150px;
@@ -278,18 +320,64 @@ f-img-loa{
 .variant__label{
   position: absolute;
   left:0;
-  margin-left: 48%;
+  margin-left: 47%;
   font-size: 30px;
   font: bolder;
   top:0;
-   margin-top:490px ;
+   margin-top:300px ;
+}
+.price{
+  position: absolute;
+  top:0;
+  margin-top:7%;
+  left:0;
+  margin-left: 47%;
+  font-size: 30px;
+}
+.click{
+  width: 50%;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #fbf8f8;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  background-color: #010101;
+  overflow: hidden;
+  outline: 2px solid #090909;
+  position: absolute;
+  top: 63%;
+  left:47%;
+}
+.list{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 8%;
+  left: 47%;
+  font-size: 25px;
+  font-style: bold;
+
+}
+.star{
+  position: absolute;
+  left:47%;
+  top:20%;
+  font-size: larger;
 }
 
 
     </style>
+    
     <button class="button">
       Add To Cart
   </button>
+  <button class="click">
+    Buy It Now
+</button>
   <section class="fix">
     small
 </section>
@@ -302,20 +390,38 @@ large
 <section class="fixxxx">
   x-large
   </section>
+  <section class="fixxxxx">
+    xx-large
+    </section>
   
     <div class="black-basketball-short">
         Black Basketball Short
       </div>
+      <div class="price">
+       LE 600.00
+      </div>
       <label class="variant__label" for="ProductSelect-template--16591078260953__main-7821808992473-option-0">
-        Size:
+        Size
     </label>
+    <div class="rte">
+    
+      <ul class="list">
+      <li>The coolest basketball shorts out-there!</li>
+      <li>Model is 177 wearing size M</li>
+      <li>Relaxed fit</li>
+      <li>Exchange and refund within 7 days</li>
+      </ul>
+      
+      <label class="star">★★★★★</label>
+        </div>
+        
 
      
       
     <img srcset="https://leongcc.com/cdn/shop/products/IMG_2091.jpg?v=1686826601&width=600,
     https://leongcc.com/cdn/shop/products/IMG_2102.jpg?v=1686826601&width=823,
     https://leongcc.com/cdn/shop/products/IMG_2093.jpg?v=1686826601&width=823
-    https://leongcc.com/cdn/shop/products/IMG_2086_1.jpg?v=1686826601&width=600" sizes="447px" loading="lazy" width="600" height="700" alt="" class="f-img-loaded ">
+    https://leongcc.com/cdn/shop/products/IMG_2086_1.jpg?v=1686826601&width=600" sizes="447px" loading="lazy" width="600" height="600" alt="" class="f-img-loaded ">
     <div class="swiper-wrapper flex flex-nowrap w-auto max-w-none" style="min-width: 70px; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
                   
                     
